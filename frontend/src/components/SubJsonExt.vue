@@ -240,6 +240,7 @@ export default {
         { title: "🇨🇳 IP-China", value: "geoip-cn" },
         { title: "🇻🇳 Site-Vietnam", value: "geosite-vn" },
         { title: "🇻🇳 IP-Vietnam", value: "geoip-vn" },
+        { title: "ru Russia", value: "geoip-ru" },
       ],
       geo: [
         {
@@ -303,6 +304,13 @@ export default {
           type: "remote",
           format: "binary",
           url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/vn.srs",
+          download_detour: "direct"
+        },
+        {
+          tag: "geoip-ru",
+          type: "remote",
+          format: "binary",
+          url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/ru.srs",
           download_detour: "direct"
         }
       ],
